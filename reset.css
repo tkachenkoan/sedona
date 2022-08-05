@@ -2,12 +2,14 @@ html,
 body,
 ul,
 ol {
-  margin:  0;
+  margin: 0;
   padding: 0;
 }
+
 ol, ul {
   list-style: none;
 }
-body{
+
+body {
   box-sizing: border-box;
-}
+}/*# sourceMappingURL=reset.css.map */
