@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Sedona</title>
 </head>
 
 <body class="body">
+  <!-- ШАПКА САЙТА-->
   <header class="header">
-    <a class="header__logo" href="#"><img src="./img/logo.svg" alt="Логотип Седона"></a>
+    <a class="header__logo" href="./index.htmlnpm install -g lighthouse"><img src="./img/logo.svg" alt="Логотип Седона"></a>
+    <!-- НАВИГАЦИЯ САЙТА -->
     <nav class="header__nav">
       <button class="nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="site-navigation">
@@ -22,10 +24,11 @@
       </ul>
     </nav>
   </header>
+  <!-- ОСНОВНАЯ ЧАСТЬ -->
   <main class="main">
-    <section class="main__promo">
-      <h1 class="visually-hidden">"Добро пожаловать в Седону!"></h1>
-      <svg width="282" height="214" viewBox="0 0 282 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <section class="main__promo promo">
+      <h1 class="visually-hidden">"Добро пожаловать в Седону!"</h1>
+      <svg class="promo__img" width="282" height="214" viewBox="0 0 282 214" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M101.385 42.8044L101.262 42.9267C100.403 43.844 99.4211 44.272 98.5006 44.272L100.219 41.2757C101.324 39.3801 100.28 37.5456 98.5619 37.5456C97.1504 37.5456 96.0457 38.096 95.0024 39.9304L94.0819 41.5203L93.3454 42.8044L93.2227 42.9267C91.8725 44.4555 90.5837 45.6785 89.7859 45.6785C89.3563 45.6785 89.1722 45.3727 89.6018 44.7001L93.5295 37.8514H95.0024L95.5548 36.9953H94.0205L95.7389 33.999H93.8977L92.1793 36.9953H90.5223L89.97 37.8514H91.627L87.9447 44.2109C87.1469 45.5562 87.6993 46.8403 89.1722 46.8403C90.2155 46.8403 91.4429 46.0454 92.5476 44.9447C92.5476 47.2683 95.8002 47.7575 97.7641 45.2504H98.1937C99.2984 45.2504 101.017 44.5778 101.937 43.4771C101.937 43.1713 101.63 42.9267 101.385 42.8044ZM97.4573 42.9267H97.3959C96.7822 42.9267 96.2912 43.4159 96.2912 44.0274C96.2912 44.272 96.3526 44.4555 96.4753 44.6389V44.7001C95.6161 46.1677 93.5295 45.9231 94.5728 43.9663L95.9844 41.5815L96.8436 40.1139C98.1323 37.9125 99.9121 38.7686 98.8074 40.6642L97.4573 42.9267Z"
           fill="#766458" />
@@ -108,6 +111,7 @@
       <h2 class="main-title__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="main-title__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
+    <!-- БЛОКИ ПРЕИМУЩЕСТВ -->
     <section class="main__description description">
       <div class="description__container--dark ">
         <h3 class="description__title-light">Настоящий городок</h3>
@@ -149,6 +153,7 @@
         <p class="description__subtitle-dark">Большинство едет в гранд каньони толпится там</p>
       </div>
     </section>
+  <!-- БЛОК ЛОКАЦИИ -->
     <section class="main__location location">
       <h5 class="location__title">Заинтересовались?</h5>
       <p class="location-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
@@ -162,6 +167,7 @@
       </div>
     </section>
   </main>
+  <!-- ПОДВАЛ САЙТА -->
   <footer class="footer">
     <div class="footer-container">
       <h5>#visitSEDONA</h5>
