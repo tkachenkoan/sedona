@@ -1,23 +1,107 @@
-@import url(./fonts);
-@import url(./_mixin.scss);
-@import url(./_variables.scss);
-@import url(./blocks/_header.scss);
-@import url(./blocks/_body.scss);
-@import url(./blocks/_attraction-form.scss);
-@import url(./blocks/_buttons.scss);
-@import url(./blocks/_container.scss);
-@import url(./blocks/_description.scss);
-@import url(./blocks/_feedback-form.scss);
-@import url(./blocks/_footer.scss);
-@import url(./blocks/_form.scss);
-@import url(./blocks/_gallery.scss);
-@import url(./blocks/_impress-form.scss);
-@import url(./blocks/_location.scss);
-@import url(./blocks/_main-title.scss);
-@import url(./blocks/_main.scss);
-@import url(./blocks/_nav.scss);
-@import url(./blocks/_promo.scss);
-@import url(./blocks/_social-icons.scss);
-@import url(./blocks/_user-information.scss);
-@import url(./blocks/_video.scss);
-@import url(./blocks/inputs/.scss);/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans.woff2), url(../fonts/ptsans.woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsansbold.woff2), url(../fonts/ptsansbold.woff);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.header {
+  border: 1px solid red;
+  min-height: 56px;
+}
+.header__logo {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav {
+  position: relative;
+}
+
+.navigation-list {
+  background-color: #81B3D2;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  min-width: 100%;
+  display: none;
+}
+
+.navigation-list__item {
+  padding-top: 17px;
+  padding-bottom: 12px;
+  text-align: center;
+  border-bottom: 1px solid #C4C4C4;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.navigation-list__link {
+  color: #fff;
+}
+
+.navigation-list--opened {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.main {
+  border: 2px solid gray;
+}
+.main-promo {
+  border: 2px solid fuchsia;
+}
+.main-promo__img {
+  text-align: center;
+  border: 2px solid red;
+  width: 282px;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

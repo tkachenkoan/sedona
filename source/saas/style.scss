@@ -1,24 +1,46 @@
-@import url(./fonts);
-@import url(./_mixin.scss);
-@import url(./_variables.scss);
-@import url(./blocks/_header.scss);
-@import url(./blocks/_body.scss);
-@import url(./blocks/_attraction-form.scss);
-@import url(./blocks/_buttons.scss);
-@import url(./blocks/_container.scss);
-@import url(./blocks/_description.scss);
-@import url(./blocks/_feedback-form.scss);
-@import url(./blocks/_footer.scss);
-@import url(./blocks/_form.scss);
-@import url(./blocks/_gallery.scss);
-@import url(./blocks/_impress-form.scss);
-@import url(./blocks/_location.scss);
-@import url(./blocks/_main-title.scss);
-@import url(./blocks/_main.scss);
-@import url(./blocks/_nav.scss);
-@import url(./blocks/_promo.scss);
-@import url(./blocks/_social-icons.scss);
-@import url(./blocks/_user-information.scss);
-@import url(./blocks/_video.scss);
-@import url(./blocks/inputs/.scss);
+@import "./mixin";
+@import "./fonts";
+@import "./variables";
+@import "./blocks/body";
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/main";
+@import "./blocks/footer";
+@import "./blocks/social-icons";
+@import "./blocks/wrapper";
+@import "./blocks/buttons";
+@import "./blocks/index/description";
+@import "./blocks/catalog/gallery";
+@import "./blocks/catalog/video";
+@import "./blocks/form/first-form";
+@import "./blocks/form/second-form";
+@import "./blocks/form/form";
+@import "./blocks/inputs/feedback";
+@import "./blocks/inputs/input-contact";
+@import "./blocks/inputs/input-impress";
 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  max-width: 320px;
+  margin: 0 auto;
+  // border: 2px solid green;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  @include title;
+}
+ul,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}

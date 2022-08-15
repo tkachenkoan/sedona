@@ -1,0 +1,36 @@
+.main {
+border: 2px solid gray;
+
+  // .main__main-title
+
+  &__main-title {
+  }
+}
+.main-promo {
+  // padding-top: 90px;
+  border: 2px solid fuchsia;
+
+  // .main-promo__img
+
+  &__img {
+    text-align: center;
+    border: 2px solid red;
+    width: 282px;
+
+  }
+}
+.visually-hidden {
+  display: none;
+}
+.main-title {
+
+  // .main-title__title
+
+  &__title {
+  }
+
+  // .main-title__subtitle
+
+  &__subtitle {
+  }
+}

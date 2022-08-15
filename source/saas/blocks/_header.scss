@@ -1,3 +1,15 @@
 .header {
+  border: 1px solid red;
+  min-height: 56px;
 
+		// .header__logo
+
+		&__logo {
+      position: absolute;
+      z-index: 3;
+      left: 50%;
+     transform: translateX(-50%);
+
+
+		}
 }

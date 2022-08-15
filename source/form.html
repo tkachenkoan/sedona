@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./saas/style.css">
   <title>Sedona</title>
 </head>
 <body class="body">
@@ -113,52 +113,54 @@
 <section class="main__form form">
 <form class="forms" action="#" method="get">
   <!-- КОНТАКТНАЯ ИНФОРМАЦИЯ ПОЛЬЗОВАТЕЛЯ -->
-  <div class="user-information">
+  <div class="form__first-form first-form">
 <fieldset class="user-information__contact-form contact-form">
   <legend class="contact-form__legend">Представьтесь:</legend>
   <label for="name">ИМЯ*:<br></label>
-  <input type="text" placeholder="Пётр" name="name" required>
+  <input class="input-contact" type="text" placeholder="Пётр" name="name" required>
   <label for="name"><br>ФАМИЛИЯ*:<br></label>
-  <input type="text" placeholder="Пустота" name="name" required>
+  <input class="input-contact" type="text" placeholder="Пустота" name="name" required>
   <label for="name"><br>Отчество:<br></label>
-  <input type="text" placeholder="Викторович" name="name">
+  <input class="input-contact" type="text" placeholder="Викторович" name="name">
 </fieldset>
 <fieldset class="user-information__contact-info contact-info">
   <legend class="contact-info__legend"></legend>
   <label for="tel"><p class="user-form"> Контактный телефон*:</p></label>
-  <input type="tel" placeholder="Введите телефон" name="tel" required>
+  <input class="input-contact" type="tel" placeholder="Введите телефон" name="tel" required>
   <label for="email"><p class="user-form">Электронная почта*:</p></label>
-  <input type="email" placeholder="Введите e-mail" name="emeil" required>
+  <input class="input-contact" type="email" placeholder="Введите e-mail" name="emeil" required>
   </fieldset>
 </div>
 <!-- БЛОКИ ОПРОСА -->
+<div class="fprm__second-form second-form">
   <fieldset class="impress-form">
   <legend class="impress-form__legend">Ваше Общее впечатление:</legend>
-    <input type="radio" name="radio" value="positive" checked>
+    <input class="input-impress" type="radio" name="radio" value="positive" checked>
 <label for="positive">Скорее положительное</label>
   <input type="radio" name="radio" value="negative">
 <label for="negative">Скорее отрицательное</label>
-  <input type="radio" name="radio" value="neutral">
+  <input class="input-impress" type="radio" name="radio" value="neutral">
 <label for="neutral">Затрудняюсь ответить</label>
 </fieldset>
 <fieldset class="attraction-form">
 <legend class="attraction-form__legend">Посещенные достопримечательности:</legend>
-  <input type="checkbox" name="checkbox" value="devil's bridge" checked>
+  <input class="input-impress" type="checkbox" name="checkbox" value="devil's bridge" checked>
 <label for="devil's-bridge">Мост Дьявола</label>
 <input type="checkbox" name="checkbox" value="mount Bell">
 <label for="mount-Bell">Гора-Колоколе</label>
-<input type="checkbox" name="checkbox" value="slide park">
+<input class="input-impress" type="checkbox" name="checkbox" value="slide park">
 <label for="slide-park">Слайд-парк</label>
-<input type="checkbox" name="checkbox" value="red rocks">
+<input class="input-impress" type="checkbox" name="checkbox" value="red rocks">
 <label for="red-rocks">Красные скалы</label>
 </fieldset>
 <fieldset class="feedback-form">
   <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
-  <textarea name="textarea" rows="9" cols="33" placeholder="Опишите подробно все свои восторги " autofocus>
+  <textarea class="feedback" name="textarea" rows="9" cols="33" placeholder="Опишите подробно все свои восторги " autofocus>
   </textarea>
 <input class="button button-review" type="button" value="Отправить отзыв">
 <p class="required-field">* — обязательные поля</p>
 </fieldset>
+</div>
 </section>
 </main>
 <!-- ПОДВАЛ САЙТА -->
