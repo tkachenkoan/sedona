@@ -1,0 +1,72 @@
+.main {
+
+  // .main__galerry
+
+  &__galerry {
+  }
+}
+.gallery {
+
+  // .gallery__cards
+
+  &__cards {
+  }
+
+  // .gallery__card
+
+  &__card {
+  }
+
+  // .gallery__picture
+
+  &__picture {
+    position: relative;
+    overflow: hidden;
+    max-width: 280px;
+    height: 280px;
+  }
+
+  // .gallery__photo
+
+  &__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    object-position: center;
+    transform: translate(-50%, -50%);
+  }
+
+  // .gallery__creator
+
+  &__creator {
+    @include subtitle;
+    color: $subtitle-color;
+    text-transform: none;
+
+  }
+}
+.wrapper {
+}
+.picture-caption {
+  @include subtitle;
+  font-weight: 700;
+  padding-bottom: 11px;
+}
+.like {
+}
+.icon {
+}
+.button-like{
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.likes {
+  @include subtitle;
+  font-weight: 700;
+  padding-left: 14px;
+}
+.like-container{
+  display: flex;
+}

@@ -1,32 +1,33 @@
-.nav{
-position: relative;
-// border: 2px solid black;
+.nav {
+  position: relative;
+  // border: 2px solid black;
 
 }
 
 
 .navigation-list {
-  // border: 2px solid pink;
+  border: 2px solid pink;
   background-color: $primary-color;
-@include title;
-min-width: 100%;
-display: none;
+  @include title;
+  min-width: 100%;
+  z-index: 2;
+  display: none;
 }
 
-  // .navigation-list__item
+// .navigation-list__item
 
 .navigation-list__item {
-    padding-top: 17px;
-    padding-bottom: 12px;
-   text-align: center;
-   border-bottom: 1px solid #C4C4C4;
-   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  padding-top: 17px;
+  padding-bottom: 12px;
+  text-align: center;
+  border-bottom: 1px solid #C4C4C4;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
 
-    // border: 2px solid yellow;
+  // border: 2px solid yellow;
 }
 
-.navigation-list__link{
-color: $white;
+.navigation-list__link {
+  color: $white;
 }
 
 
@@ -37,5 +38,3 @@ color: $white;
   right: 0;
   z-index: 2;
 }
-
-

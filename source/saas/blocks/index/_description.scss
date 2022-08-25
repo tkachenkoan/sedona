@@ -1,0 +1,135 @@
+.description {
+
+
+  // .description__container--dark
+
+  &__container--dark {
+    background-color: $primary-color;
+padding-top: 33px;
+padding-bottom: 40px;
+  }
+
+  // .description__title-light
+
+  &__title-light {
+    color: $white;
+    @include title;
+    text-align: $center;
+    padding-bottom: 11px;
+  }
+
+  // .description__number-light
+
+  &__number-light {
+    color: $white;
+    text-align: $center;
+    padding-bottom: 17px;
+  }
+
+  // .description__subtitle-light
+
+  &__subtitle-light {
+    @include subtitle;
+    color: $white;
+    text-align: $center;
+  }
+
+  // .description__picture
+
+
+  &__picture {
+    position: relative;
+    overflow: hidden;
+    max-width: 320px;
+   height: 260px;
+
+  }
+
+  .photo-index {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    object-fit: cover;
+    object-position: center;
+
+  }
+
+  &__container--wrapper {
+    margin: 0 auto;
+    max-width: 286px;
+
+  }
+
+  // .description__title-dark
+
+  &__title-dark {
+    @include title;
+    text-align: $center;
+    padding-bottom: 15px;
+
+
+  }
+
+  // .description__title-dark--left
+
+  &__title-dark--left {
+    text-align: left;
+    padding-bottom: 16px;
+    padding-top: 18px;
+
+  }
+
+  // .description__subtitle-dark--left
+
+  &__subtitle-dark--left {
+    @include subtitle;
+    text-align: left;
+    text-transform: uppercase;
+    color: #333333;
+    mix-blend-mode: normal;
+
+  }
+
+
+
+  // .description__subtitle-dark
+
+  &__subtitle-dark {
+    @include subtitle;
+    color: $subtitle-color;
+    text-align: $center;
+
+
+  }
+
+  // .description__container--light
+
+  &__container--light {
+    background-color: #EEEEEE;
+    padding: 24px 0;
+
+
+  }
+
+  // .description__number-dark
+
+  &__number-dark {
+    color: $subtitle-color;
+    text-align: $center;
+    padding-bottom: 24px;
+  }
+
+		// .description__container--burger
+
+
+  .housing-svg,.burger-svg,.souvenirs-svg{
+    position: relative;
+    top: 7px;
+
+
+
+
+  }
+
+}

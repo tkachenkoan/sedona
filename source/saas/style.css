@@ -12,13 +12,25 @@
   font-style: normal;
   font-display: swap;
 }
+body {
+  border: 2px solid green;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.wrapper {
+  border: 2px solid magenta;
+  margin: 0 auto;
+  max-width: 286px;
+}
+
 .header {
   border: 1px solid red;
   min-height: 56px;
 }
 .header__logo {
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -28,13 +40,15 @@
 }
 
 .navigation-list {
+  border: 2px solid pink;
   background-color: #81B3D2;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   min-width: 100%;
+  z-index: 2;
   display: none;
 }
 
@@ -58,22 +72,336 @@
   z-index: 2;
 }
 
-.main {
-  border: 2px solid gray;
-}
 .main-promo {
-  border: 2px solid fuchsia;
+  min-height: 158px;
+  background: url(../img/back-desktop.jpg.jpg) no-repeat center;
+  background-size: cover;
 }
 .main-promo__img {
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid yellow;
+}
+
+.main-promo--full {
+  padding-top: 90px;
+  padding-bottom: 85px;
+  border: 2px solid orange;
+}
+.main-promo--full .visually-hidden {
+  display: none;
+}
+
+.main-title {
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+.main-title__title {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
   text-align: center;
-  border: 2px solid red;
-  width: 282px;
+}
+.main-title__subtitle {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  padding-top: 35px;
+  text-align: center;
+}
+
+.main-promo--short {
+  padding-top: 52px;
+  padding-bottom: 67px;
+  background: url(../img/back-desktop--short.jpg) no-repeat center bottom;
 }
 
 .visually-hidden {
   display: none;
 }
 
+.triangle {
+  background-image: url(/source/img/triangle.svg);
+  max-height: 57px;
+  z-index: 6;
+}
+
+.location {
+  padding-top: 38px;
+}
+.location__wrapper {
+  max-width: 261px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+.location .button {
+  font-family: "PT Sans";
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-size: 21px;
+  background-color: #81B3D2;
+  width: 100%;
+  color: #fff;
+  padding: 16px 49px;
+}
+.location__title {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 28px;
+}
+
+.location-subtitle {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-indent: 17px;
+}
+
+.map-responsive {
+  padding-top: 49px;
+}
+
+.iframe {
+  max-width: 320px;
+}
+
+.footer__title {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-size: 21px;
+  text-align: center;
+  padding-top: 38px;
+}
+.footer__subtitle {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  padding-top: 33px;
+  padding-bottom: 47px;
+  justify-content: center;
+}
+.social-icons__vk {
+  margin-left: 6px;
+}
+.social-icons__telegramm {
+  margin-left: 6px;
+}
+.social-icons__youtube {
+  margin-left: 6px;
+}
+
+.developed {
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-academy {
+  margin-left: 13px;
+  border: 2px solid blue;
+}
+
+.description__container--dark {
+  background-color: #81B3D2;
+  padding-top: 33px;
+  padding-bottom: 40px;
+}
+.description__title-light {
+  color: #fff;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 11px;
+}
+.description__number-light {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 17px;
+}
+.description__subtitle-light {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+.description__picture {
+  position: relative;
+  overflow: hidden;
+  max-width: 320px;
+  height: 260px;
+}
+.description .photo-index {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.description__container--wrapper {
+  margin: 0 auto;
+  max-width: 286px;
+}
+.description__title-dark {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.description__title-dark--left {
+  text-align: left;
+  padding-bottom: 16px;
+  padding-top: 18px;
+}
+.description__subtitle-dark--left {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: left;
+  text-transform: uppercase;
+  color: #333333;
+  mix-blend-mode: normal;
+}
+.description__subtitle-dark {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+}
+.description__container--light {
+  background-color: #EEEEEE;
+  padding: 24px 0;
+}
+.description__number-dark {
+  color: #333333;
+  text-align: center;
+  padding-bottom: 24px;
+}
+.description .housing-svg, .description .burger-svg, .description .souvenirs-svg {
+  position: relative;
+  top: 7px;
+}
+
+.gallery__picture {
+  position: relative;
+  overflow: hidden;
+  max-width: 280px;
+  height: 280px;
+}
+.gallery__photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transform: translate(-50%, -50%);
+}
+.gallery__creator {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  text-transform: none;
+}
+
+.picture-caption {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 11px;
+}
+
+.button-like {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.likes {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 14px;
+}
+
+.like-container {
+  display: flex;
+}
+
+.video__title {
+  padding-top: 17px;
+  padding-bottom: 37px;
+  text-align: center;
+}
+.video__container {
+  position: relative;
+  overflow: hidden;
+  max-width: 280px;
+  height: 177px;
+}
+.video__video-pleer {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.description__title-dark--catalog {
+  padding-bottom: 37px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -91,7 +419,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;

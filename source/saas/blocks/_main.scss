@@ -1,36 +1,64 @@
-.main {
-border: 2px solid gray;
+.main{
 
-  // .main__main-title
-
-  &__main-title {
-  }
 }
-.main-promo {
-  // padding-top: 90px;
-  border: 2px solid fuchsia;
-
-  // .main-promo__img
+.main-promo{
+  min-height: 158px;
+  background: url(../img/back-desktop.jpg.jpg) no-repeat center;
+  background-size: cover;
 
   &__img {
-    text-align: center;
-    border: 2px solid red;
-    width: 282px;
-
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid yellow;
   }
+
 }
+.main-promo--full {
+  padding-top: 90px;
+  padding-bottom: 85px;
+  border: 2px solid orange;
+  // .main-promo__img
+
 .visually-hidden {
   display: none;
 }
+}
+
 .main-title {
+  padding-top: 32px;
+  padding-bottom: 16px;
 
   // .main-title__title
 
   &__title {
+    @include title;
+    text-align: $center;
   }
 
   // .main-title__subtitle
 
   &__subtitle {
+    @include subtitle;
+    color: $subtitle-color;
+    padding-top: 35px;
+    text-align: $center;
+
   }
+}
+
+.main-promo--short {
+  padding-top: 52px;
+  padding-bottom: 67px;
+  // background-position: bottom;
+  background: url(../img/back-desktop--short.jpg) no-repeat  center bottom;
+
+}
+.visually-hidden {
+  display: none;
+
+}
+.triangle {
+  background-image: url(/source/img/triangle.svg);
+  max-height: 57px;
+  z-index: 6;
 }

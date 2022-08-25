@@ -1,0 +1,57 @@
+.footer {
+
+  // .footer__title
+
+  &__title {
+    @include title;
+    font-size: 21px;
+    text-align: $center;
+    padding-top: 38px;
+  }
+
+  // .footer__subtitle
+
+  &__subtitle {
+    @include subtitle;
+    text-align: $center;
+  }
+}
+.footer-container {
+}
+
+.social-icons {
+  // border: 2px solid orange;
+  display: flex;
+  padding-top: 33px;
+  padding-bottom: 47px;
+  justify-content: center;
+
+  // .social-icons__vk
+
+  &__vk {
+    margin-left: 6px;
+  }
+
+  // .social-icons__telegramm
+
+  &__telegramm {
+    margin-left: 6px;
+  }
+
+  // .social-icons__youtube
+
+  &__youtube {
+    margin-left: 6px;
+  }
+}
+.developed {
+  border: 2px solid red;
+  display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.logo-academy {
+  margin-left: 13px;
+border: 2px solid blue;
+}

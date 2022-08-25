@@ -1,0 +1,45 @@
+.main {
+
+  // .main__location
+
+  &__location {
+  }
+}
+.location {
+  padding-top: 38px;
+
+  // .location__wrapper
+
+  &__wrapper {
+max-width: 261px;
+margin: 0 auto 32px;
+text-align: center;
+  }
+  .button {
+    @include button;
+    padding: 16px 49px;
+
+  }
+
+
+  // .location__title
+
+  &__title {
+    @include title;
+    text-align: center;
+    padding-bottom: 28px;
+
+
+
+  }
+}
+.location-subtitle {
+  @include subtitle;
+  text-indent:17px;
+}
+.map-responsive {
+  padding-top: 49px;
+}
+.iframe {
+ max-width: 320px;
+}
